@@ -1,6 +1,5 @@
 "use String"
 
-
 // *Consegna:*
 
 // Scrivi un programma che stampi i numeri da 1 a 100,
@@ -23,9 +22,23 @@
 
 
 
-// fare un for con i numeri da 1 a 100
+// fare un for con i numeri da 1 a 100 
 
 // dentro la for mettere un if per i multipli di 3 e 5 mettere (Fizz e Buzz)
 
 // dentro la for mettere un if per i multipli di entrambe 3 e 5 mettere (FizzBuzz)
 
+for (let i = 1; i <= 100; i++) {
+    if (i % 5 === 0 && i % 3 === 0) {
+        console.log("FizzBuzz");
+    }
+    else if (i % 3 === 0) {
+        console.log("Fizz");
+    } 
+    else if (i % 5 === 0) {
+        console.log("Buzz");
+    }
+    else{
+        console.log(i);
+    }
+}
